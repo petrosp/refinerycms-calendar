@@ -1,5 +1,5 @@
 
-      <% content_for :body_content_left do %>
+      <% content_for :body do %>
 
         <% if @featured_events.present? %>
           <h2><%= t('.featured_events') %></h2>
@@ -23,7 +23,7 @@
 
       <% end %>
 
-      <% content_for :body_content_right do %>
+      <% content_for :side_body do %>
         <%= render "refinery/calendar/categories/categories_list" %>
       <% end %>
 

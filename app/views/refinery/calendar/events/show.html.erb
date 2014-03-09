@@ -3,13 +3,13 @@
   <%= @event.title %>
 <% end %>
 
-<% content_for :body_content_left do %>
+<% content_for :body do %>
 
   <%= render @event, state: :full %>
 
 <% end %>
 
-<% content_for :body_content_right do %>
+<% content_for :side_body do %>
   <% render 'refinery/calendar/categories/categories_list' %>
 <% end %>
 
